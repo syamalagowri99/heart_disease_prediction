@@ -1,2 +1,2 @@
-Streamlit == 1.36.0
+streamlit == 1.36.0
 scikit-learn == 1.2.2
