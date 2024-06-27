@@ -61,14 +61,3 @@ else:
 	heart_diagnosis = 'The person does not have any heart disease'
 
 st.success(heart_diagnosis)
-
-import streamlit as st
-import pickle
-import sklearn
-
-# Check the version of Streamlit
-print(f"Streamlit version: {st.__version__}")
-
-# Check the version of scikit-learn
-sklearn_version = sklearn.__version__
-print(f"scikit-learn version: {sklearn_version}")
