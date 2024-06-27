@@ -47,12 +47,9 @@ with col3:
 
 with col1:
 	thal = st.number_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
-
-# code for Prediction
+	
 heart_diagnosis = ''
 heart_prediction=None
-# creating a button for Prediction Heart Disease Test Result
-
 if st.button('Heart Disease Test Result'):
 	heart_prediction= loaded_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]])[0]
 if (heart_prediction == 1):
